@@ -1,0 +1,20 @@
+
+Airship.png
+size: 512,256
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+airship
+  rotate: false
+  xy: 2, 2
+  size: 107, 110
+  orig: 107, 110
+  offset: 0, 0
+  index: -1
+weiyan01
+  rotate: true
+  xy: 2, 114
+  size: 128, 256
+  orig: 128, 256
+  offset: 0, 0
+  index: -1

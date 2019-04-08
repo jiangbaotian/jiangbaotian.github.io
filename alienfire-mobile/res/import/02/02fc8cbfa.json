@@ -1,0 +1,158 @@
+[
+  [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "player",
+      "data": {
+        "__id__": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "player",
+      "_children": [
+        {
+          "__id__": 2
+        }
+      ],
+      "_level": 1,
+      "_components": [
+        {
+          "__type__": "34976g4+oNIdp6YCUCy0U6G",
+          "node": {
+            "__id__": 1
+          },
+          "enemy_path": "Canvas/enemy",
+          "bullet_prefab": {
+            "__uuid__": "69UznJml5CEoK/oR92V2CF"
+          },
+          "player_prefab": {
+            "__uuid__": "49B8rubI5DKZi8McBNGH27"
+          }
+        },
+        {
+          "__type__": "cc.BoxCollider",
+          "node": {
+            "__id__": 1
+          },
+          "_offset": {
+            "__type__": "cc.Vec2",
+            "y": -5
+          },
+          "_size": {
+            "__type__": "cc.Size",
+            "width": 151,
+            "height": 213
+          }
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "49B8rubI5DKZi8McBNGH27"
+        },
+        "fileId": "63HKsprftGz6uVAi/HsdlS"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 151,
+        "height": 213
+      },
+      "_scale": {
+        "__type__": "cc.Vec3",
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "groupIndex": 1
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "anim",
+      "_parent": {
+        "__id__": 1
+      },
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 2
+          },
+          "_spriteFrame": {
+            "__uuid__": "7dDjs0U3lAw7WhTyP+mddx"
+          }
+        },
+        {
+          "__type__": "cc.Animation",
+          "node": {
+            "__id__": 2
+          },
+          "_enabled": false,
+          "_defaultClip": {
+            "__uuid__": "0fH9BP7vhNQZyoeL0RHCvy"
+          },
+          "_clips": [
+            {
+              "__uuid__": "0fH9BP7vhNQZyoeL0RHCvy"
+            }
+          ]
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "49B8rubI5DKZi8McBNGH27"
+        },
+        "fileId": "03JSUzXGRDHqw/YG96t1Vo"
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 151,
+        "height": 213
+      },
+      "_position": {
+        "__type__": "cc.Vec3",
+        "y": 7
+      },
+      "_scale": {
+        "__type__": "cc.Vec3",
+        "x": 1,
+        "y": 1,
+        "z": 1
+      }
+    }
+  ],
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "alien_ship",
+      "texture": "34zu8VFfFCaJRQBeCaeZdG",
+      "rect": [
+        0,
+        0,
+        151,
+        213
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        151,
+        213
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+]

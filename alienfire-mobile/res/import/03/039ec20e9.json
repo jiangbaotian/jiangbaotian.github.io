@@ -1,0 +1,143 @@
+[
+  [
+    {
+      "__type__": "cc.Prefab",
+      "_name": "enemy_bullet",
+      "data": {
+        "__id__": 1
+      }
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "enemy_bullet",
+      "_children": [
+        {
+          "__id__": 2
+        }
+      ],
+      "_components": [
+        {
+          "__type__": "cc.BoxCollider",
+          "node": {
+            "__id__": 1
+          },
+          "_size": {
+            "__type__": "cc.Size",
+            "width": 6,
+            "height": 8
+          }
+        },
+        {
+          "__type__": "a22e2i6W49N74x3McScFAzF",
+          "node": {
+            "__id__": 1
+          },
+          "speed_y": -300
+        },
+        {
+          "__type__": "cc.AudioSource",
+          "node": {
+            "__id__": 1
+          },
+          "_clip": {
+            "__uuid__": "3e+jjndglDLqQynKO/Mr1E"
+          },
+          "preload": true
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "46GeFil6lCNJBlYctb/ufu"
+        },
+        "fileId": "e0rGJJIflFZY95BqTvaWLF"
+      },
+      "_scaleX": 1,
+      "_scaleY": 1,
+      "_scale": {
+        "__type__": "cc.Vec3",
+        "x": 1,
+        "y": 1,
+        "z": 1
+      },
+      "groupIndex": 4
+    },
+    {
+      "__type__": "cc.Node",
+      "_name": "anim",
+      "_parent": {
+        "__id__": 1
+      },
+      "_components": [
+        {
+          "__type__": "cc.Sprite",
+          "node": {
+            "__id__": 2
+          },
+          "_spriteFrame": {
+            "__uuid__": "a2MjXRFdtLlYQ5ouAFv/+R"
+          },
+          "_sizeMode": 0
+        }
+      ],
+      "_prefab": {
+        "__type__": "cc.PrefabInfo",
+        "root": {
+          "__id__": 1
+        },
+        "asset": {
+          "__uuid__": "46GeFil6lCNJBlYctb/ufu"
+        },
+        "fileId": "b63TtjDHJJ4qRDr/INpKHb"
+      },
+      "_color": {
+        "__type__": "cc.Color",
+        "g": 131,
+        "b": 5
+      },
+      "_contentSize": {
+        "__type__": "cc.Size",
+        "width": 6,
+        "height": 8
+      },
+      "_scaleX": 1,
+      "_scaleY": 1,
+      "_scale": {
+        "__type__": "cc.Vec3",
+        "x": 1,
+        "y": 1,
+        "z": 1
+      }
+    }
+  ],
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "default_sprite_splash",
+      "texture": "02delMVqdBD70a/HSD99FK",
+      "rect": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "offset": [
+        0,
+        0
+      ],
+      "originalSize": [
+        2,
+        2
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+]

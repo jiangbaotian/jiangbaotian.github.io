@@ -1,0 +1,171 @@
+{
+  "__type__": "sp.SkeletonData",
+  "_name": "Airship",
+  "_native": "raw-skeleton.json",
+  "_skeletonJson": {
+    "skeleton": {
+      "hash": "++4D3lpZjeJL+ia1oEUZwT+g7o8",
+      "spine": "3.6.53",
+      "width": 107,
+      "height": 211.77,
+      "images": ""
+    },
+    "bones": [
+      {
+        "name": "root"
+      },
+      {
+        "name": "All",
+        "parent": "root"
+      },
+      {
+        "name": "airship",
+        "parent": "All"
+      },
+      {
+        "name": "weiyan",
+        "parent": "All",
+        "y": -47.43
+      }
+    ],
+    "slots": [
+      {
+        "name": "weiyan01",
+        "bone": "weiyan",
+        "attachment": "weiyan01"
+      },
+      {
+        "name": "weiyan1",
+        "bone": "weiyan",
+        "attachment": "weiyan01",
+        "blend": "additive"
+      },
+      {
+        "name": "airship",
+        "bone": "airship",
+        "attachment": "airship"
+      }
+    ],
+    "skins": {
+      "default": {
+        "airship": {
+          "airship": {
+            "width": 107,
+            "height": 110
+          }
+        },
+        "weiyan01": {
+          "weiyan01": {
+            "y": -45.35,
+            "scaleX": 0.6,
+            "scaleY": 0.5,
+            "width": 128,
+            "height": 256
+          }
+        },
+        "weiyan1": {
+          "weiyan01": {
+            "y": -45.35,
+            "scaleX": 0.6,
+            "scaleY": 0.5,
+            "width": 128,
+            "height": 256
+          }
+        }
+      }
+    },
+    "animations": {
+      "Idle": {
+        "slots": {
+          "weiyan1": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff00"
+              },
+              {
+                "time": 0.1,
+                "color": "ffffff64"
+              },
+              {
+                "time": 0.2,
+                "color": "ffffff00"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "weiyan": {
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 0.75
+              },
+              {
+                "time": 0.1,
+                "x": 1,
+                "y": 0.8
+              },
+              {
+                "time": 0.2,
+                "x": 1,
+                "y": 0.75
+              }
+            ]
+          }
+        }
+      },
+      "Move": {
+        "slots": {
+          "weiyan1": {
+            "color": [
+              {
+                "time": 0,
+                "color": "ffffff3c"
+              },
+              {
+                "time": 0.0667,
+                "color": "ffffffff"
+              },
+              {
+                "time": 0.1333,
+                "color": "ffffff3c"
+              }
+            ]
+          }
+        },
+        "bones": {
+          "weiyan": {
+            "scale": [
+              {
+                "time": 0,
+                "x": 1,
+                "y": 0.8
+              },
+              {
+                "time": 0.0667,
+                "x": 1,
+                "y": 1
+              },
+              {
+                "time": 0.1333,
+                "x": 1,
+                "y": 0.8
+              }
+            ]
+          }
+        }
+      }
+    }
+  },
+  "_atlasText": "\nAirship.png\nsize: 512,256\nformat: RGBA8888\nfilter: Linear,Linear\nrepeat: none\nairship\n  rotate: false\n  xy: 2, 2\n  size: 107, 110\n  orig: 107, 110\n  offset: 0, 0\n  index: -1\nweiyan01\n  rotate: true\n  xy: 2, 114\n  size: 128, 256\n  orig: 128, 256\n  offset: 0, 0\n  index: -1\n",
+  "textures": [
+    {
+      "__uuid__": "7eabaxsP1ACJFoHtp9yvqq"
+    }
+  ],
+  "textureNames": [
+    "Airship.png"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "__type__": "cc.SpriteFrame",
+  "content": {
+    "name": "Airship",
+    "texture": "7eabaxsP1ACJFoHtp9yvqq",
+    "rect": [
+      2,
+      2,
+      256,
+      239
+    ],
+    "offset": [
+      -126,
+      6.5
+    ],
+    "originalSize": [
+      512,
+      256
+    ],
+    "capInsets": [
+      0,
+      0,
+      0,
+      0
+    ]
+  }
+}

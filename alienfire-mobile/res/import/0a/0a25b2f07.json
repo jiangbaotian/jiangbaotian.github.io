@@ -1,0 +1,246 @@
+[
+  {
+    "__type__": "cc.AnimationClip",
+    "_name": "play_anim",
+    "_duration": 1.0166666666666666,
+    "curveData": {
+      "comps": {
+        "cc.Sprite": {
+          "spriteFrame": [
+            {
+              "frame": 0,
+              "value": {
+                "__uuid__": "3faBzwXLpMX4zhvJvzwR/f"
+              }
+            },
+            {
+              "frame": 0.16666666666666666,
+              "value": {
+                "__uuid__": "69g0GJeUlEOYHrAvy3XtZF"
+              }
+            },
+            {
+              "frame": 0.3333333333333333,
+              "value": {
+                "__uuid__": "e4oQVf6ypJxoekAoXtHmEX"
+              }
+            },
+            {
+              "frame": 0.5,
+              "value": {
+                "__uuid__": "69r5C8IF1BgJ3GqnU1wjBN"
+              }
+            },
+            {
+              "frame": 0.6666666666666666,
+              "value": {
+                "__uuid__": "51BY31zj1BjYBS1uOPmc73"
+              }
+            },
+            {
+              "frame": 0.8333333333333334,
+              "value": {
+                "__uuid__": "67qcUtbPhLxa1ZQGjew6XO"
+              }
+            },
+            {
+              "frame": 1,
+              "value": {
+                "__uuid__": "e6HOLRZr9HZZz6v7rtEhjU"
+              }
+            }
+          ]
+        }
+      }
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "ship_center",
+      "texture": "4eaJCSNuVL3Z+sHqaivqbr",
+      "rect": [
+        1,
+        1,
+        61,
+        63
+      ],
+      "offset": [
+        -0.5,
+        -0.5
+      ],
+      "originalSize": [
+        64,
+        64
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "ship_death_4",
+      "texture": "c4JcCwsU9OLbAC7bHZRR4X",
+      "rect": [
+        1,
+        0,
+        61,
+        64
+      ],
+      "offset": [
+        -0.5,
+        0
+      ],
+      "originalSize": [
+        64,
+        64
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "ship_death_5",
+      "texture": "deKrZxe1dClpZjQv1ecJAl",
+      "rect": [
+        1,
+        0,
+        61,
+        64
+      ],
+      "offset": [
+        -0.5,
+        0
+      ],
+      "originalSize": [
+        64,
+        64
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "ship_death_1",
+      "texture": "3b1bQfKlZJRZ2ajKlxaPz+",
+      "rect": [
+        1,
+        0,
+        61,
+        64
+      ],
+      "offset": [
+        -0.5,
+        0
+      ],
+      "originalSize": [
+        64,
+        64
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "ship_death_3",
+      "texture": "70BeNBNEBPPaE653wVwmJX",
+      "rect": [
+        1,
+        0,
+        61,
+        64
+      ],
+      "offset": [
+        -0.5,
+        0
+      ],
+      "originalSize": [
+        64,
+        64
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "ship_death_2",
+      "texture": "e8lx7XfFNHvp7nLWTR0aQs",
+      "rect": [
+        1,
+        0,
+        61,
+        64
+      ],
+      "offset": [
+        -0.5,
+        0
+      ],
+      "originalSize": [
+        64,
+        64
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  {
+    "__type__": "cc.SpriteFrame",
+    "content": {
+      "name": "ship_death_6",
+      "texture": "93MMQkzZJFs6vNYziqnViZ",
+      "rect": [
+        0,
+        1,
+        63,
+        63
+      ],
+      "offset": [
+        -0.5,
+        -0.5
+      ],
+      "originalSize": [
+        64,
+        64
+      ],
+      "capInsets": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  }
+]
