@@ -56,60 +56,6 @@
   {
     "__type__": "cc.SpriteFrame",
     "content": {
-      "name": "monster_02",
-      "texture": "ecb6jKqIZP5rycCPq4Lphz",
-      "rect": [
-        0,
-        0,
-        402,
-        314
-      ],
-      "offset": [
-        0,
-        0
-      ],
-      "originalSize": [
-        402,
-        314
-      ],
-      "capInsets": [
-        0,
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "__type__": "cc.SpriteFrame",
-    "content": {
-      "name": "monster_04",
-      "texture": "48L79jQe5B/KenkuBwqYbI",
-      "rect": [
-        0,
-        0,
-        245,
-        218
-      ],
-      "offset": [
-        0,
-        0
-      ],
-      "originalSize": [
-        245,
-        218
-      ],
-      "capInsets": [
-        0,
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "__type__": "cc.SpriteFrame",
-    "content": {
       "name": "e1",
       "texture": "1aJEO2PRdGQbAanSBPFK5P",
       "rect": [
@@ -125,33 +71,6 @@
       "originalSize": [
         26,
         64
-      ],
-      "capInsets": [
-        0,
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "__type__": "cc.SpriteFrame",
-    "content": {
-      "name": "monster_03",
-      "texture": "33R4UlWJVNrZQphk8YaX0N",
-      "rect": [
-        0,
-        0,
-        328,
-        295
-      ],
-      "offset": [
-        0,
-        0
-      ],
-      "originalSize": [
-        328,
-        295
       ],
       "capInsets": [
         0,
@@ -1033,87 +952,6 @@
       "originalSize": [
         52,
         64
-      ],
-      "capInsets": [
-        0,
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "__type__": "cc.SpriteFrame",
-    "content": {
-      "name": "monster_06",
-      "texture": "11+fqEXKVDIKM3t6UHJEyZ",
-      "rect": [
-        0,
-        0,
-        281,
-        219
-      ],
-      "offset": [
-        0,
-        0
-      ],
-      "originalSize": [
-        281,
-        219
-      ],
-      "capInsets": [
-        0,
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "__type__": "cc.SpriteFrame",
-    "content": {
-      "name": "monster_01",
-      "texture": "be/uCnDOpPnoKosgrMwB5w",
-      "rect": [
-        0,
-        0,
-        355,
-        316
-      ],
-      "offset": [
-        0,
-        0
-      ],
-      "originalSize": [
-        355,
-        316
-      ],
-      "capInsets": [
-        0,
-        0,
-        0,
-        0
-      ]
-    }
-  },
-  {
-    "__type__": "cc.SpriteFrame",
-    "content": {
-      "name": "monster_05",
-      "texture": "551E9kGIZCkrzKYbLILUyM",
-      "rect": [
-        0,
-        0,
-        250,
-        225
-      ],
-      "offset": [
-        0,
-        0
-      ],
-      "originalSize": [
-        250,
-        225
       ],
       "capInsets": [
         0,

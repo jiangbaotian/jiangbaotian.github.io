@@ -14,7 +14,7 @@ window.__require = function e(t, n, r) {
       var f = n[o] = {
         exports: {}
       };
-      t[o][0].call(f.exports, function (e) {
+      t[o][0].call(f.exports, function(e) {
         var n = t[o][1][e];
         return s(n || e);
       }, f, f.exports, e, t, n, r);
@@ -25,7 +25,7 @@ window.__require = function e(t, n, r) {
   for (var o = 0; o < r.length; o++) s(r[o]);
   return s;
 }({
-  Const: [function (require, module, exports) {
+  Const: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "53d790H8DtJfpHFcGFL+W3m", "Const");
     "use strict";
@@ -48,7 +48,7 @@ window.__require = function e(t, n, r) {
       SCREEN_HEIGHT: 1334
     };
     window.Barrier = {
-      1: [{
+      1: [ {
         gap: 2,
         count: 5,
         data: {
@@ -87,11 +87,11 @@ window.__require = function e(t, n, r) {
           4: 5,
           5: 5
         }
-      }]
+      } ]
     };
     cc._RF.pop();
-  }, {}],
-  EnemyBullet: [function (require, module, exports) {
+  }, {} ],
+  EnemyBullet: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "a22e2i6W49N74x3McScFAzF", "EnemyBullet");
     "use strict";
@@ -117,8 +117,8 @@ window.__require = function e(t, n, r) {
       }
     });
     cc._RF.pop();
-  }, {}],
-  EnemyManager: [function (require, module, exports) {
+  }, {} ],
+  EnemyManager: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "081dfsopABO6qYgZHBo0r0F", "EnemyManager");
     "use strict";
@@ -200,7 +200,7 @@ window.__require = function e(t, n, r) {
         this._curBarrierData.count -= 1;
         var dat = this._curBarrierData.data;
         var thiz = this;
-        Object.keys(dat).forEach(function (key) {
+        Object.keys(dat).forEach(function(key) {
           cc.log("monster:" + key + ", count:" + dat[key]);
           var count = dat[key];
           var prefab = thiz._monster_prefab[key - 1];
@@ -223,8 +223,8 @@ window.__require = function e(t, n, r) {
     EnemyManager._instance = new EnemyManager();
     module.exports = EnemyManager;
     cc._RF.pop();
-  }, {}],
-  Enemy: [function (require, module, exports) {
+  }, {} ],
+  Enemy: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "d5fc9bLf8JI+pJ/KTelJL7+", "Enemy");
     "use strict";
@@ -266,8 +266,8 @@ window.__require = function e(t, n, r) {
         this.collider = this.node.getComponent(cc.BoxCollider);
         this.collider.tag = Const.COLLIDER_TAG.ENEMY;
       },
-      start: function start() { },
-      shoot_enemy_bullet: function shoot_enemy_bullet() { },
+      start: function start() {},
+      shoot_enemy_bullet: function shoot_enemy_bullet() {},
       onCollisionEnter: function onCollisionEnter(other, self) {
         if (this._isDead()) return;
         if (!GameController.isPlaying()) return;
@@ -279,7 +279,7 @@ window.__require = function e(t, n, r) {
           if (this.hp <= 0) {
             this.anim.getComponent(cc.Animation).play();
             this._onDie();
-            this.scheduleOnce(function () {
+            this.scheduleOnce(function() {
               this.node.removeFromParent();
               this.node.destroy();
             }, .2);
@@ -301,24 +301,24 @@ window.__require = function e(t, n, r) {
         if (!GameController.isPlaying()) return;
         var win = cc.winSize;
         switch (this.type) {
-          case 1:
-          case 2:
-            if (Math.random() <= .01) {
-              var k = Math.random() >= .5 ? 1 : -1;
-              this.speed_x += .1 * k * this.speed_x;
-            }
+         case 1:
+         case 2:
+          if (Math.random() <= .01) {
+            var k = Math.random() >= .5 ? 1 : -1;
+            this.speed_x += .1 * k * this.speed_x;
+          }
 
-          case 3:
-            this.node.y < this.player.y && this.speed_y < 0 && Math.random() < .01 && (this.speed_y = -this.speed_y);
+         case 3:
+          this.node.y < this.player.y && this.speed_y < 0 && Math.random() < .01 && (this.speed_y = -this.speed_y);
 
-          default:
-            break;
+         default:
+          break;
 
-          case 4:
-          case 5:
-          case 6:
-            var distance = Math.sqrt((this.player.x - this.node.x) * (this.player.x - this.node.x) + (this.player.y - this.node.y) * (this.player.y - this.node.y));
-            distance < .6 * win.width && this._makeSpeedCloseToPlayer();
+         case 4:
+         case 5:
+         case 6:
+          var distance = Math.sqrt((this.player.x - this.node.x) * (this.player.x - this.node.x) + (this.player.y - this.node.y) * (this.player.y - this.node.y));
+          distance < .6 * win.width && this._makeSpeedCloseToPlayer();
         }
       },
       _makeSpeedCloseToPlayer: function _makeSpeedCloseToPlayer() {
@@ -359,8 +359,8 @@ window.__require = function e(t, n, r) {
     EnemyManager: "EnemyManager",
     GameDataManager: "GameDataManager",
     Weapon: "Weapon"
-  }],
-  GameController: [function (require, module, exports) {
+  } ],
+  GameController: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "7955bguy0BJipHgVuzj4elG", "GameController");
     "use strict";
@@ -448,15 +448,15 @@ window.__require = function e(t, n, r) {
     "../GameScene/Common/GameMissionManager": "GameMissionManager",
     "../GameScene/Common/GameObjectManager": "GameObjectManager",
     "../GameScene/Common/GameUIManager": "GameUIManager"
-  }],
-  GameDataManager: [function (require, module, exports) {
+  } ],
+  GameDataManager: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "c4743wCHdhKT6smcw+J2ovJ", "GameDataManager");
     "use strict";
     var Weapon = require("../GameMain/Weapon");
     var GameUIManager = require("GameUIManager");
     var GameDataManager = cc.Class({
-      ctor: function ctor() { },
+      ctor: function ctor() {},
       statics: {
         _instance: null
       },
@@ -483,8 +483,8 @@ window.__require = function e(t, n, r) {
   }, {
     "../GameMain/Weapon": "Weapon",
     GameUIManager: "GameUIManager"
-  }],
-  GameEndLayer: [function (require, module, exports) {
+  } ],
+  GameEndLayer: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "9fc2fTDvyBNrL5GH6sQkVJ1", "GameEndLayer");
     "use strict";
@@ -492,7 +492,7 @@ window.__require = function e(t, n, r) {
     cc.Class({
       extends: cc.Component,
       properties: {},
-      start: function start() { },
+      start: function start() {},
       onLeftBtnClick: function onLeftBtnClick() {
         cc.director.loadScene("scenes/game_scene");
       },
@@ -503,15 +503,15 @@ window.__require = function e(t, n, r) {
     cc._RF.pop();
   }, {
     "../GameController": "GameController"
-  }],
-  GameLevelManager: [function (require, module, exports) {
+  } ],
+  GameLevelManager: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "fc979dIKTVK2ZwGin05tv7t", "GameLevelManager");
     "use strict";
-    var GameLevel = require("../GameScene/Common/GameLevel");
-    var Weapon = require("../GameScene/GameMain/Weapon");
+    var GameLevel = require("./GameLevel");
+    var Weapon = require("../../GameScene/GameMain/Weapon");
     var GameLevelManager = cc.Class({
-      ctor: function ctor() { },
+      ctor: function ctor() {},
       statics: {
         _instance: null
       },
@@ -525,20 +525,20 @@ window.__require = function e(t, n, r) {
       getCurWeapon: function getCurWeapon() {
         return this.curWeapon;
       },
-      loadGameData: function loadGameData() { }
+      loadGameData: function loadGameData() {}
     });
     GameLevelManager._instance = new GameLevelManager();
     module.exports = GameLevelManager;
     cc._RF.pop();
   }, {
-    "../GameScene/Common/GameLevel": void 0,
-    "../GameScene/GameMain/Weapon": void 0
-  }],
-  GameLevel: [function (require, module, exports) {
+    "../../GameScene/GameMain/Weapon": "Weapon",
+    "./GameLevel": "GameLevel"
+  } ],
+  GameLevel: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "45cb6f0l2pGO44u9ga4rbg5", "GameLevel");
     "use strict";
-    cc.Class({
+    module.exports = cc.Class({
       extends: cc.Component,
       properties: {
         levelNum: 1,
@@ -547,11 +547,11 @@ window.__require = function e(t, n, r) {
         toolType: 2,
         toolNum: 20
       },
-      start: function start() { }
+      start: function start() {}
     });
     cc._RF.pop();
-  }, {}],
-  GameMainBattleLayer: [function (require, module, exports) {
+  }, {} ],
+  GameMainBattleLayer: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "0a6527PFe1Fg5WexFhMxUmN", "GameMainBattleLayer");
     "use strict";
@@ -588,8 +588,8 @@ window.__require = function e(t, n, r) {
   }, {
     Enemy: "Enemy",
     EnemyManager: "EnemyManager"
-  }],
-  GameMainUILayer: [function (require, module, exports) {
+  } ],
+  GameMainUILayer: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "80af2nWFrBKOrh7FSN+yFsi", "GameMainUILayer");
     "use strict";
@@ -609,7 +609,7 @@ window.__require = function e(t, n, r) {
         this.label_level = cc.find(this.level_path).getComponent(cc.Label);
         this.right_bar = cc.find(this.right_bar_path).getComponent("ToolRightBar");
       },
-      start: function start() { },
+      start: function start() {},
       setScore: function setScore(score) {
         var scoreTxt = score + "";
         score > 1e4 && (scoreTxt = score / 1e4 + "K");
@@ -625,8 +625,8 @@ window.__require = function e(t, n, r) {
       }
     });
     cc._RF.pop();
-  }, {}],
-  GameMaskLayer: [function (require, module, exports) {
+  }, {} ],
+  GameMaskLayer: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "4d26b9n6nlHB6sxy4ROk/jw", "GameMaskLayer");
     "use strict";
@@ -640,23 +640,23 @@ window.__require = function e(t, n, r) {
       }
     });
     cc._RF.pop();
-  }, {}],
-  GameMissionManager: [function (require, module, exports) {
+  }, {} ],
+  GameMissionManager: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "9ad8dJ/z+JOqawMADtKwgdJ", "GameMissionManager");
     "use strict";
     var GameMissionManager = cc.Class({
-      ctor: function ctor() { },
+      ctor: function ctor() {},
       statics: {
         _instance: null
       },
-      init: function init() { }
+      init: function init() {}
     });
     GameMissionManager._instance = new GameMissionManager();
     module.exports = GameMissionManager;
     cc._RF.pop();
-  }, {}],
-  GameObjectManager: [function (require, module, exports) {
+  }, {} ],
+  GameObjectManager: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "3a6f38glz9Dw7sEmOFcxYVi", "GameObjectManager");
     "use strict";
@@ -665,7 +665,7 @@ window.__require = function e(t, n, r) {
     var EnemyManager = require("../GameMain/EnemyManager");
     var GameLevelManager = require("../Common/GameLevelManager");
     var GameObjectManager = cc.Class({
-      ctor: function ctor() { },
+      ctor: function ctor() {},
       statics: {
         _instance: null
       },
@@ -695,7 +695,7 @@ window.__require = function e(t, n, r) {
       onGameSlowlly: function onGameSlowlly() {
         WeaponManager._instance.removeWeapon();
       },
-      onGamePreEnd: function onGamePreEnd() { },
+      onGamePreEnd: function onGamePreEnd() {},
       onGameCollisionHandle: function onGameCollisionHandle(other, obj) {
         if (obj.tag == Const.COLLIDER_TAG.PLAYER) if (other.tag == Const.COLLIDER_TAG.TOOL) {
           var tool = other.node.getComponent("Tool");
@@ -711,8 +711,8 @@ window.__require = function e(t, n, r) {
     "../GameMain/EnemyManager": "EnemyManager",
     "../GameMain/ToolManager": "ToolManager",
     "../GameMain/WeaponManager": "WeaponManager"
-  }],
-  GamePreEndLayer: [function (require, module, exports) {
+  } ],
+  GamePreEndLayer: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "93634aT9JVDo7wVaF7EM/Ed", "GamePreEndLayer");
     "use strict";
@@ -724,7 +724,7 @@ window.__require = function e(t, n, r) {
         this.playagain = this.node;
         this.playagain.zIndex = 100;
       },
-      start: function start() { },
+      start: function start() {},
       onReplayBtnClick: function onReplayBtnClick() {
         cc.director.loadScene("scenes/game_scene");
       },
@@ -735,8 +735,8 @@ window.__require = function e(t, n, r) {
     cc._RF.pop();
   }, {
     "../GameController": "GameController"
-  }],
-  GameScene: [function (require, module, exports) {
+  } ],
+  GameScene: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "ee80etYIOZBC7NZP2nqdTl4", "GameScene");
     "use strict";
@@ -756,20 +756,20 @@ window.__require = function e(t, n, r) {
         console.log("ConstTest", Const.GAME_STATE.PRE_END);
         GameController.init();
       },
-      start: function start() { }
+      start: function start() {}
     });
     cc._RF.pop();
   }, {
     GameController: "GameController"
-  }],
-  GameStartLayer: [function (require, module, exports) {
+  } ],
+  GameStartLayer: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "77988lNK+tHkIJSD6JHnXoh", "GameStartLayer");
     "use strict";
     cc.Class({
       extends: cc.Component,
       properties: {},
-      onLoad: function onLoad() { },
+      onLoad: function onLoad() {},
       start: function start() {
         GameController.onEnterStartLayer();
       },
@@ -779,18 +779,18 @@ window.__require = function e(t, n, r) {
       onEndlessModeBtnClick: function onEndlessModeBtnClick() {
         GameController.preStartGame(2);
       },
-      onUpgradeBtnClick: function onUpgradeBtnClick() { },
-      onWeaponBtnClick: function onWeaponBtnClick() { }
+      onUpgradeBtnClick: function onUpgradeBtnClick() {},
+      onWeaponBtnClick: function onWeaponBtnClick() {}
     });
     cc._RF.pop();
-  }, {}],
-  GameUIManager: [function (require, module, exports) {
+  }, {} ],
+  GameUIManager: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "fedbcI3UN1NQpPC37zLviXl", "GameUIManager");
     "use strict";
     var Weapon = require("../GameMain/Weapon");
     var GameUIManager = cc.Class({
-      ctor: function ctor() { },
+      ctor: function ctor() {},
       statics: {
         _instance: null
       },
@@ -841,7 +841,7 @@ window.__require = function e(t, n, r) {
       setScore: function setScore(score) {
         this.main_ui_layer.setScore(score);
       },
-      onGameStart: function onGameStart() { },
+      onGameStart: function onGameStart() {},
       onGamePause: function onGamePause() {
         this.showMask();
       },
@@ -852,7 +852,7 @@ window.__require = function e(t, n, r) {
         this.hideMask();
         this.showGameEndLayer();
       },
-      onGameSlowlly: function onGameSlowlly() { },
+      onGameSlowlly: function onGameSlowlly() {},
       onGamePreEnd: function onGamePreEnd() {
         this.showGamePreEndLayer();
       },
@@ -865,26 +865,26 @@ window.__require = function e(t, n, r) {
     cc._RF.pop();
   }, {
     "../GameMain/Weapon": "Weapon"
-  }],
-  PlayerManager: [function (require, module, exports) {
+  } ],
+  PlayerManager: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "e2b92Kd1m1O54UxwWDlXTrN", "PlayerManager");
     "use strict";
     var PlayerManager = cc.Class({
-      ctor: function ctor() { },
+      ctor: function ctor() {},
       statics: {
         _instance: null
       },
       init: function init() {
         this.game_main_layer = cc.find("Canvas/game_main_layer");
       },
-      autoCreate: function autoCreate() { }
+      autoCreate: function autoCreate() {}
     });
     PlayerManager._instance = new PlayerManager();
     module.exports = PlayerManager;
     cc._RF.pop();
-  }, {}],
-  Player: [function (require, module, exports) {
+  }, {} ],
+  Player: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "34976g4+oNIdp6YCUCy0U6G", "Player");
     "use strict";
@@ -910,17 +910,17 @@ window.__require = function e(t, n, r) {
         this.firstInit = true;
         this.anim = this.node.getChildByName("anim");
         this.node.y = -cc.view.getVisibleSize().height / 2 + this.node.height;
-        this.node.on(cc.Node.EventType.TOUCH_MOVE, function (t) {
+        this.node.on(cc.Node.EventType.TOUCH_MOVE, function(t) {
           var offset = t.getDelta();
           this.node.x += offset.x;
           this.node.y += offset.y;
           cc.log("TOUCH_MOVE x", this.node.x);
         }.bind(this), this.node);
-        this.node.on(cc.Node.EventType.TOUCH_START, function (t) {
+        this.node.on(cc.Node.EventType.TOUCH_START, function(t) {
           this.firstInit ? GameController.startGame() : GameController.resumeGame();
           this.firstInit = false;
         }.bind(this), this.node);
-        this.node.on(cc.Node.EventType.TOUCH_END, function (t) {
+        this.node.on(cc.Node.EventType.TOUCH_END, function(t) {
           this.firstInit || GameController.pauseGame();
         }.bind(this), this.node);
         this.shoot_flag = 3;
@@ -928,7 +928,7 @@ window.__require = function e(t, n, r) {
         this.collider = this.node.getComponent(cc.BoxCollider);
         this.collider.tag = Const.COLLIDER_TAG.PLAYER;
       },
-      start: function start() { },
+      start: function start() {},
       onCollisionEnter: function onCollisionEnter(other, self) {
         if (this._isDead) return;
         var isEnemy = other.tag == Const.COLLIDER_TAG.ENEMY;
@@ -939,7 +939,7 @@ window.__require = function e(t, n, r) {
           this.anim.getComponent(cc.Animation).play();
           this.unschedule(this._shoot_bullet, this);
           this.unschedule(this._shoot_more_bullet, this);
-          this.scheduleOnce(function () {
+          this.scheduleOnce(function() {
             this.node.removeFromParent();
             GameController.preEndGame();
           }, 1);
@@ -983,8 +983,8 @@ window.__require = function e(t, n, r) {
   }, {
     Enemy: "Enemy",
     Tool: "Tool"
-  }],
-  ToolManager: [function (require, module, exports) {
+  } ],
+  ToolManager: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "15656ObcPRMQaISJa2jDYKr", "ToolManager");
     "use strict";
@@ -992,13 +992,13 @@ window.__require = function e(t, n, r) {
     var WeaponManager = require("../GameMain/WeaponManager");
     var ToolManager = cc.Class({
       extends: cc.Component,
-      ctor: function ctor() { },
+      ctor: function ctor() {},
       statics: {
         _instance: null
       },
       init: function init() {
         this.game_main_layer = cc.find("Canvas/game_main_layer");
-        this.toolePrefabNames = ["tools_weapon2", "tools_weapon3", "tools_weapon4", "tools_weapon5", "tools_weapon6"];
+        this.toolePrefabNames = [ "tools_weapon2", "tools_weapon3", "tools_weapon4", "tools_weapon5", "tools_weapon6" ];
       },
       autoCreate: function autoCreate() {
         this.schedule(this._autoCreate.bind(this), 5);
@@ -1007,7 +1007,7 @@ window.__require = function e(t, n, r) {
         var thiz = this;
         var randomIndex = Math.floor(4 * Math.random());
         thiz.toolePrefabName = thiz.toolePrefabNames[randomIndex];
-        cc.loader.loadRes(thiz.toolePrefabName, function (errorMessage, loadedResource) {
+        cc.loader.loadRes(thiz.toolePrefabName, function(errorMessage, loadedResource) {
           if (errorMessage) {
             cc.log("\u8f7d\u5165\u9884\u5236\u8d44\u6e90\u5931\u8d25, \u539f\u56e0:" + errorMessage);
             return;
@@ -1035,8 +1035,8 @@ window.__require = function e(t, n, r) {
   }, {
     "../GameMain/Tool": "Tool",
     "../GameMain/WeaponManager": "WeaponManager"
-  }],
-  ToolRightBar: [function (require, module, exports) {
+  } ],
+  ToolRightBar: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "61a37ji0ylMEpD9sXquFvKq", "ToolRightBar");
     "use strict";
@@ -1059,8 +1059,8 @@ window.__require = function e(t, n, r) {
       }
     });
     cc._RF.pop();
-  }, {}],
-  Tool: [function (require, module, exports) {
+  }, {} ],
+  Tool: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "21c0bTXRtZF94GmPkA/NB0c", "Tool");
     "use strict";
@@ -1104,7 +1104,7 @@ window.__require = function e(t, n, r) {
           this.node.getComponent(cc.BoxCollider).enable = false;
         }
       },
-      start: function start() { },
+      start: function start() {},
       isWeapon: function isWeapon() {
         return 1 == this.category;
       },
@@ -1118,7 +1118,7 @@ window.__require = function e(t, n, r) {
         return 1;
       },
       onCollisionEnter: function onCollisionEnter(other, self) {
-        this.scheduleOnce(function () {
+        this.scheduleOnce(function() {
           this.node.removeFromParent();
           this.node.destroy();
         }, .2);
@@ -1163,15 +1163,15 @@ window.__require = function e(t, n, r) {
     cc._RF.pop();
   }, {
     GameDataManager: "GameDataManager"
-  }],
-  WeaponManager: [function (require, module, exports) {
+  } ],
+  WeaponManager: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "4e148Os82lADKHOCqs7FQ68", "WeaponManager");
     "use strict";
     var Weapon = require("../GameMain/Weapon");
     var WeaponManager = cc.Class({
       extends: cc.Component,
-      ctor: function ctor() { },
+      ctor: function ctor() {},
       statics: {
         _instance: null
       },
@@ -1181,7 +1181,7 @@ window.__require = function e(t, n, r) {
         this.weaponGroups = new cc.Node();
         this.curWeaponNum = 0;
       },
-      autoCreate: function autoCreate() { },
+      autoCreate: function autoCreate() {},
       createByType: function createByType(type) {
         var weapon = new Weapon();
         weapon.type = type;
@@ -1221,7 +1221,7 @@ window.__require = function e(t, n, r) {
         cc.log("useMoreBulletWeapon");
         var thiz = this;
         var num = this.curWeaponNum;
-        cc.loader.loadRes("bullet", function (errorMessage, loadedResource) {
+        cc.loader.loadRes("bullet", function(errorMessage, loadedResource) {
           if (errorMessage) {
             cc.log("\u8f7d\u5165\u9884\u5236\u8d44\u6e90\u5931\u8d25, \u539f\u56e0:" + errorMessage);
             return;
@@ -1274,8 +1274,8 @@ window.__require = function e(t, n, r) {
     cc._RF.pop();
   }, {
     "../GameMain/Weapon": "Weapon"
-  }],
-  Weapon: [function (require, module, exports) {
+  } ],
+  Weapon: [ function(require, module, exports) {
     "use strict";
     cc._RF.push(module, "ea980X6oBVAN5Wyb4WWJ9Td", "Weapon");
     "use strict";
@@ -1296,7 +1296,7 @@ window.__require = function e(t, n, r) {
         this.collider = this.node.getComponent(cc.BoxCollider);
         this.collider.tag = Const.COLLIDER_TAG.WEAPON;
       },
-      start: function start() { },
+      start: function start() {},
       onCollisionEnter: function onCollisionEnter(other, self) {
         this.node.removeFromParent();
         this.audio.play();
@@ -1316,5 +1316,5 @@ window.__require = function e(t, n, r) {
       }
     });
     cc._RF.pop();
-  }, {}]
-}, {}, ["GameDataManager", "GameLevel", "GameLevelManager", "GameMaskLayer", "GameMissionManager", "GameObjectManager", "GameUIManager", "Const", "GameController", "GameEndLayer", "Enemy", "EnemyBullet", "EnemyManager", "GameMainBattleLayer", "GameMainUILayer", "Player", "PlayerManager", "Tool", "ToolManager", "ToolRightBar", "Weapon", "WeaponManager", "GamePreEndLayer", "GameScene", "GameStartLayer"]);
+  }, {} ]
+}, {}, [ "GameDataManager", "GameLevel", "GameLevelManager", "GameMaskLayer", "GameMissionManager", "GameObjectManager", "GameUIManager", "Const", "GameController", "GameEndLayer", "Enemy", "EnemyBullet", "EnemyManager", "GameMainBattleLayer", "GameMainUILayer", "Player", "PlayerManager", "Tool", "ToolManager", "ToolRightBar", "Weapon", "WeaponManager", "GamePreEndLayer", "GameScene", "GameStartLayer" ]);
